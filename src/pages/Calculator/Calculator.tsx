@@ -32,7 +32,6 @@ type ClassNames =
 interface OwnProps {
   classes: Record<ClassNames, string>;
 }
-const ob = Object;
 type Props = OwnProps;
 
 export const CalculatorPage: React.FC<Props> = (props: Props) => {
