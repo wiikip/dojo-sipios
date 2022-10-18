@@ -94,7 +94,7 @@ export const CalculatorPage: React.FC<Props> = (props: Props) => {
       <img className={classes.kanjiSun} src={kanjiSun} alt="kanji sun" />
       <img className={classes.kanjiBook} src={kanjiBook} alt="kanji book" />
 
-      <button onClick={() => ob.getTest()}>Break the world</button>
+      <button onClick={() => {throw new Error("error")}}>Break the world</button>
     </div>
   );
 };
