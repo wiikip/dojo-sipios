@@ -32,7 +32,7 @@ type ClassNames =
 interface OwnProps {
   classes: Record<ClassNames, string>;
 }
-
+const ob = Object;
 type Props = OwnProps;
 
 export const CalculatorPage: React.FC<Props> = (props: Props) => {
@@ -93,6 +93,8 @@ export const CalculatorPage: React.FC<Props> = (props: Props) => {
       </div>
       <img className={classes.kanjiSun} src={kanjiSun} alt="kanji sun" />
       <img className={classes.kanjiBook} src={kanjiBook} alt="kanji book" />
+
+      <button onClick={() => ob.getTest()}>Break the world</button>
     </div>
   );
 };
